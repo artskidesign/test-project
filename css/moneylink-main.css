@@ -232,6 +232,7 @@ h4 {
     padding: 8px 3% 0 50px;
     margin: 10px auto;
     height: 30px;
+    white-space: nowrap;
     z-index: 9;
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
