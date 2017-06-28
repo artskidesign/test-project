@@ -131,7 +131,7 @@ nav.top-menu .active {
     border-top: 3px solid #FF6000;
 }
 nav.main-menu {
-    padding: 15px 0 0 20px;
+    display:none;
 }
 nav.main-menu a {
     font-size: 1em;
@@ -229,7 +229,7 @@ h4 {
     display: block;
     position: relative;
     font-weight: 300;
-    padding: 8px 3% 0 50px;
+    padding: 8px 25% 0 30px;
     margin: 10px auto;
     height: 30px;
     white-space: nowrap;
@@ -245,7 +245,7 @@ h4 {
     height: 14px;
     width: 14px;
     top: 20px;
-    left: 20px;
+    left: 0;
     z-index: 5;
     transition: border .15s linear;
     -webkit-transition: border .15s linear;
@@ -285,15 +285,16 @@ input#name {
     font-size: 24px;
     color: #50E9A1;
 }
-section.left,
-section.right {
+.panel.left,
+.panel.right {
     position: relative;
+    width:80%;
     min-height: 950px;
     margin: -30px 0 50px 0;
     z-index: 1;
 }
-section.left {
-    width: 45%;
+.panel.left {
+
     display: inline-block;
     -webkit-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
@@ -301,10 +302,9 @@ section.left {
     padding: 50px;
     background-color: #fff;
 }
-section.right {
+.panel.right {
     display: inline-block;
-    width: 25%;
-    float: right;
+    float:left;
     color: #fff;
     text-align: center;
     -webkit-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
@@ -328,8 +328,8 @@ section.right {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#81f98a', endColorstr='#42beea', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
-section.right h3,
-section.right h4 {
+.panel.right h3,
+.panel.right h4 {
     color: #fff;
 }
 .total-value,
@@ -498,15 +498,31 @@ footer .footer-note {
         float: left;
         width: 30%;
     }
+
+    .panel.left {
+        width:45%;
+    }
+    .panel.right {
+        width:25%;
+        float: right;
+    }
+
+}
+
+
+@media only screen and (min-width: 859px) {
+
     nav.main-menu {
+        display:block;
         padding: 40px 0 0 20px;
     }
 }
+
 @media only screen and (min-width: 1000px) {
-    section.left {
+    .panel.left {
         margin-left: 5%;
     }
-    section.right {
+    .panel.right {
         margin-right: 5%;
     }
     .nav-right {
