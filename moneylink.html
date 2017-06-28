@@ -1,0 +1,347 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/simple-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/gridforms.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/moneylink-main.css">
+
+
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+
+    <section class="hero">
+        <div class="logo">
+            <a href="#"><img src="img/moneylink-logo.svg" />
+            </a><span>moneylink</span>
+        </div>
+
+        <nav class="main-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Invest</a>
+            <a href="#">Borrow</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+
+            <div class="nav-right">
+                <div class="nav-button nav-button--login">
+                    <div class="button-inner">Login</div>
+                </div>
+                <div class="nav-button nav-button--register">
+                    <div class="button-inner">Register</div>
+                </div>
+            </div>
+        </nav>
+
+
+        <h1 class="page-title">Save &amp; Invest</h1>
+
+    </section>
+
+
+
+
+    <section class="panel left">
+
+        <form class="plan-form">
+            <fieldset>
+                <h1>Create Your Plan</h1>
+
+                <span>Do you have a goal in mind?</span>
+
+                <div class="row" data-row-span="4">
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="s-option" value="savings">
+                        <label for="s-option">Bacon</label>
+                        <div class="check"></div>
+                    </div>
+
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="u-option" value="uni-fees">
+                        <label for="u-option">Uni Fees</label>
+                        <div class="check"></div>
+                    </div>
+
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="r-option" value="retirerment">
+                        <label for="r-option">Retirerment</label>
+                        <div class="check"></div>
+                    </div>
+
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="h-option" value="holiday">
+                        <label for="h-option">Dream Holiday</label>
+                        <div class="check"></div>
+                    </div>
+                </div>
+
+
+                <div class="row" data-row-span="4">
+
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="w-option" value="wedding">
+                        <label for="w-option">Wedding</label>
+                        <div class="check"></div>
+                    </div>
+
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="c-option" value="new-car">
+                        <label for="c-option">New Car</label>
+                        <div class="check"></div>
+                    </div>
+
+                    <div class="field" data-field-span="1">
+                        <input type="radio" name="save" id="o-option" value="other">
+                        <label for="o-option">Other</label>
+                        <div class="check"></div>
+                    </div>
+
+                    <div class="field" data-field-span="1">
+                        <input type="text" name="name" id="name" value="Enter name">
+                    </div>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+
+
+
+
+
+        <form class="grid-form">
+            <fieldset>
+                <div data-row-span="3">
+                    <div data-field-span="2">
+                        <label>How much do you want to invest upfront? <i class="material-icons info-icon">&#xE88F;</i>
+                        </label>
+                        <input for="upfAmount" oninput="upfAmount.value=upfRange.value" id="upfront" type="range" min="0" max="200" name="upfRange" />
+                    </div>
+
+
+                    <div class="result" data-field-span="1">
+                        <label>£</label>
+                        <input oninput="upfRange.value=upfAmount.value" class="result" type="text" value="0" name="upfAmount" for="upfRange" oninput="upfRange.value=amount.value" />
+                    </div>
+                </div>
+
+
+
+                <div data-row-span="3">
+                    <div data-field-span="2">
+                        <label>How much do you want to invest monthly? <i class="material-icons info-icon">&#xE88F;</i>
+                        </label>
+                        <input for="mthAmount" oninput="mthAmount.value=mthRange.value" id="monthly" type="range" min="0" max="50000" name="mthRange" />
+                    </div>
+
+                    <div class="result" data-field-span="1">
+                        <label>£</label>
+                        <input oninput="mthRange.value=mthAmount.value" class="result" type="text" value="0" name="mthAmount" for="mthRange" oninput="mthRange.value=amount.value" />
+                    </div>
+                </div>
+
+
+
+                <div data-row-span="3">
+                    <div data-field-span="2">
+                        <label>How long do you want to invest for? <i class="material-icons info-icon">&#xE88F;</i>
+                        </label>
+                        <input for="yrsAmount" oninput="yrsAmount.value=yrsRange.value" id="years" type="range" min="0" max="30" name="yrsRange" />
+                    </div>
+
+                    <div class="result" data-field-span="1">
+                        <label>Years</label>
+                        <input oninput="yrsRange.value=yrsAmount.value" class="result" type="text" value="0" name="yrsAmount" for="yrsRange" oninput="yrsRange.value=amount.value" />
+                    </div>
+                </div>
+
+
+                <div data-row-span="3">
+                    <div data-field-span="2">
+                        <label>What's your investment style? <i class="material-icons info-icon">&#xE88F;</i>
+                        </label>
+                        <input for="styleAmount" oninput="styleAmount.value=styleRange.value" id="style" type="range" mmin="1" max="4" steps="1" value="1" name="styleRange" />
+                    </div>
+
+                    <div class="result" data-field-span="1">
+                        <label>Investment Style</label>
+                        <span id="output"></span>
+                    </div>
+                </div>
+
+
+
+            </fieldset>
+        </form>
+
+
+    </section>
+
+
+    <section class="panel right">
+
+
+        <div class="total-value">
+            <h3>Total Investment</h3>
+            <span class="value">225,500</span>
+        </div>
+
+        <div class="predicted-value">
+            <h3>Predicted Value <i class="material-icons info-icon info-icon--right-panel">&#xE88F;</i></h3>
+            <span class="value">£225,500</span>
+        </div>
+
+        <div class="risk-value">
+            <h4>Risk Of Underpreformance <i class="material-icons info-icon info-icon--right-panel">&#xE88F;</i></h4>
+            <img src="img/di.svg" />
+        </div>
+
+        <div class="additional-info">
+            These forecasts are a guide only. Your predicted value is not a guaranteed return. With investing, your capital is at risk and you could get back less than you put in.
+        </div>
+
+
+        <div class="button">
+            <div class="button-inner">See Your Plan</div>
+        </div>
+
+    </section>
+
+
+
+
+
+        <footer> 
+
+           <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="">
+                            <div class="logo"><img src="img/moneylink-logo-fo.svg" /><span>moneylink</span>
+                        </a>
+                        </div>
+                        <span class="tel">0141 112 13778</span>
+                    </div>
+
+
+                    <div class="col-3">
+                        <div class="footer-section">Invest</div>
+                        <a href="">Overview</a>
+                        <a href="">Investment ISAs</a>
+                        <a href="">Peer to Peer ISAs</a>
+                        <a href="">How it works</a>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="footer-section">Borrow</div>
+                        <a href="">Overview</a>
+                        <a href="">Consolidation Loans</a>
+                        <a href="">Homeowner Loans</a>
+                        <a href="">How it Works</a>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="footer-section">More</div>
+                        <a href="">About Us</a>
+                        <a href="">Testimonials</a>
+                        <a href="">Download The App</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+    <div class="footer-note">
+                    Warning: Please remember the value of your investments can go down as well as up, so you might get back less than you originally invested.
+                    <br /> Moneylink is authorised and regulated by the Financial Conduct Authority (FCA No. 662530) registered in Scotland (Company No. 00000000) with a registered office at 123 Glasgow Street, Glasgow
+
+                    <span class="copyright">Copyright message here  |  Web design by <span>Digital Impact - Digital Agency Glasgow</span></span>
+                    <span class="footer-links">Our Fees  |  Privacy Policy  |  Terms &amp; Conditions</span> 
+</div>
+
+
+</div>       
+        </footer>
+
+
+    </div>
+
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="js/gridforms.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <script>
+        var values = ['Decisive', 'Tentative', 'Annuities', 'Retirement', 'Bonds'];
+
+        var input = document.getElementById('style'),
+            output = document.getElementById('output');
+        input.oninput = function() {
+            output.innerHTML = values[this.value];
+        };
+        input.oninput();
+
+        $(function() {
+
+            $('input[type=range]')
+                .rangeslider({
+                    polyfill: false
+                })
+
+        });
+    </script>
+
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--         <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="174px" viewBox="0 0 170 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="money-link" transform="translate(-1034.000000, -684.000000)">
+            <g id="Group-2" transform="translate(1039.000000, 684.000000)">
+                <text id="Low-Copy" font-family="Lato" font-size="29" font-weight="normal" line-spacing="37" fill="#FFFFFF">
+                    <tspan x="55.4143066" y="94">Low</tspan>
+                </text>
+                <circle id="Oval-4" stroke="#FFFFFF" cx="82" cy="85" r="82"></circle>
+                <path d="M6.97675496,56.5978476 C3.75712761,65.3900721 2,74.8873236 2,84.7949742 C2,130.082324 38.7126505,166.794974 84,166.794974 L84,166.794974" id="Oval-4-Copy" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval-6" fill="#FFFFFF" cx="84" cy="3" r="3"></circle>
+                <circle id="Oval-6-Copy" fill="#FFFFFF" cx="156" cy="49" r="3"></circle>
+                <circle id="Oval-6-Copy-2" fill="#FFFFFF" cx="149" cy="134" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
