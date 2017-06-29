@@ -278,7 +278,9 @@ input#name {
 }
 /* end radio buttons style */
 
-
+.form-row {
+    margin-bottom: 50px;
+}
 
 .result {
     border-bottom: 1px solid #aaa;
@@ -288,28 +290,21 @@ input#name {
 .panel.left,
 .panel.right {
     position: relative;
-    width:80%;
+    display: inline-block;
     min-height: 950px;
     margin: -30px 0 50px 0;
+    display: inline-block;
     z-index: 1;
 }
 .panel.left {
-
-    display: inline-block;
-    -webkit-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
     padding: 50px;
     background-color: #fff;
 }
 .panel.right {
-    display: inline-block;
     float:left;
     color: #fff;
     text-align: center;
-    -webkit-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
+
     padding: 50px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81f98a+1,42beea+100 */
     
@@ -498,6 +493,12 @@ footer .footer-note {
         float: left;
         width: 30%;
     }
+    .panel.left, .panel.right {
+    width:80%;
+    -webkit-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.4);
+    }
 
     .panel.left {
         width:45%;
@@ -506,6 +507,10 @@ footer .footer-note {
         width:25%;
         float: right;
     }
+
+    .form-row {
+    margin-bottom: 20px;
+}
 
 }
 
